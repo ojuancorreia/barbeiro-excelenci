@@ -104,6 +104,12 @@
     box-shadow:0 4px 10px -4px rgba(0,0,0,.6);
   }
 
+  /* em breve (sem link) */
+  .link.soon{cursor:default; opacity:.6; box-shadow:none}
+  .link.soon:hover{transform:none; background:var(--card); border-color:var(--line)}
+  .link.featured.soon:hover{background:var(--accent); border-color:var(--accent)}
+  .link.soon .arrow{display:none}
+
   /* WhatsApp */
   .link.whats .ico{background:rgba(37,211,102,.14); color:#25D366}
 
@@ -147,26 +153,30 @@
 
   <ul class="links">
     <li>
-      <a class="link featured" href="https://metodo360.juancorreia.com.br">
-        <span class="badge">Mais barato</span>
+      <!-- EM BREVE: quando https://metodo360.juancorreia.com.br estiver no ar, voltar para <a class="link featured" href="https://metodo360.juancorreia.com.br"> -->
+      <div class="link featured soon" aria-disabled="true">
+        <span class="badge">Em breve</span>
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></span>
         <span class="txt"><strong>Combo: eBook + Método 360 Prático</strong><small>Os dois juntos com desconto</small></span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-      </a>
+      </div>
     </li>
     <li>
-      <a class="link" href="https://barbeiroexcelencia.juancorreia.com.br">
+      <!-- TEMPORÁRIO: quando barbeiroexcelencia.juancorreia.com.br estiver no ar, trocar /ebook/ por https://barbeiroexcelencia.juancorreia.com.br -->
+      <a class="link" href="/ebook/">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
         <span class="txt"><strong>eBook Barbeiro de Excelência</strong><small>Desafio prático de 7 dias · R$24,90</small></span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
     </li>
     <li>
-      <a class="link" href="https://360pratico.juancorreia.com.br">
+      <!-- EM BREVE: quando https://360pratico.juancorreia.com.br estiver no ar, voltar para <a class="link" href="https://360pratico.juancorreia.com.br"> -->
+      <div class="link soon" aria-disabled="true">
+        <span class="badge">Em breve</span>
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
         <span class="txt"><strong>Método 360 Prático</strong><small>Curso online de serviços para barbeiros</small></span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-      </a>
+      </div>
     </li>
     <li>
       <a class="link whats" href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan!%20Vim%20pelo%20Instagram%20e%20quero%20saber%20sobre%20os%20treinamentos%20presenciais." target="_blank" rel="noopener">

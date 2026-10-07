@@ -540,6 +540,14 @@
   .serv-cta:hover{transform:translateY(-2px)}
   .serv-cta p{color:var(--accent); font-weight:600}
   @media (max-width:800px){ .serv-cta{grid-column:1 / -1} }
+  .trofeu-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center}
+  @media (max-width:800px){ .trofeu-grid{grid-template-columns:1fr; gap:32px} }
+  .trofeu-foto{border:1px solid var(--accent); border-radius:6px; overflow:hidden; box-shadow:0 30px 60px -24px rgba(0,0,0,0.7), 0 0 0 1px var(--accent-glow-strong)}
+  .trofeu-foto img{width:100%; height:auto; display:block}
+  .trofeu h2{font-size:clamp(1.7rem, 3.4vw, 2.3rem); margin:6px 0 16px}
+  .trofeu p{color:var(--ink-muted); margin:0 0 16px; font-size:1.02rem}
+  .trofeu p strong{color:var(--ink)}
+  .trofeu .stat .n{font-size:1.4rem; letter-spacing:0.08em}
   .proof-gallery.four{grid-template-columns:repeat(4, 1fr)}
   @media (max-width:800px){ .proof-gallery.four{grid-template-columns:1fr 1fr} }
   .feature-quote{
@@ -688,6 +696,25 @@
       <div class="check-item"><span class="ico">✓</span><p>Ver, em clientes reais, como cada serviço é feito do começo ao fim.</p></div>
       <div class="check-item"><span class="ico">✓</span><p>Aumentar o ticket de cada atendimento com quem já senta na sua cadeira.</p></div>
       <div class="check-item"><span class="ico">✓</span><p>Parar de depender só do corte pra fechar o mês.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TROFÉU -->
+<section class="trofeu">
+  <div class="wrap trofeu-grid">
+    <div class="trofeu-foto">
+      <img src="/img/trofeu-campeao-vendas.webp" width="720" height="793" alt="Troféu de acrílico com a letra J e a placa dourada &quot;Campeão de vendas — Em reconhecimento ao seu sucesso&quot;" loading="lazy" decoding="async">
+    </div>
+    <div>
+      <span class="eyebrow">Resultado de verdade</span>
+      <h2>Campeão de vendas</h2>
+      <p>Esse é o troféu entregue pra quem <strong>mais vende serviços extras no mês</strong>.</p>
+      <p>Não é sorte e não é agenda lotada: é saber executar os serviços e oferecer do jeito certo, com os clientes que já sentam na cadeira. É exatamente isso que eu te mostro no Método 360 na Prática.</p>
+      <div class="stat">
+        <span class="n">★★★★★</span>
+        <span class="l">Reconhecimento pra quem mais vendeu serviços no mês</span>
+      </div>
     </div>
   </div>
 </section>

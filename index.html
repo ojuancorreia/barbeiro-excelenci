@@ -4,16 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Juan Correia — Links</title>
-<meta name="description" content="eBook Barbeiro de Excelência, Método 360 Prático, combo e treinamentos presenciais com Juan Correia.">
+<meta name="description" content="eBook Barbeiro de Excelência, Método 360 na Prática e treinamentos presenciais com Juan Correia.">
 <meta name="theme-color" content="#111111">
 <meta property="og:title" content="Juan Correia">
 <meta property="og:description" content="Atendimento, vendas e serviços para barbeiros.">
-<meta property="og:image" content="https://www.juancorreia.com.br/img/juan.webp">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="/img/juan-avatar.webp" type="image/webp">
+<meta property="og:image" content="https://www.juancorreia.com.br/img/juan-og.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="800">
+<link rel="preload" as="image" href="/img/juan-avatar.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="font" href="/fonts/fraunces-700-nome.woff2" type="font/woff2" crossorigin>
 <style>
+  /* Fraunces 700 recortada só com as letras de "Juan Correia" (3,5 KB, hospedada no site) */
+  @font-face{
+    font-family:'Fraunces'; font-style:normal; font-weight:700; font-display:swap;
+    src:url(/fonts/fraunces-700-nome.woff2) format('woff2');
+    unicode-range:U+20,U+43,U+4A,U+61,U+65,U+69,U+6E-6F,U+72,U+75;
+  }
   :root{
     --bg:#111111;
     --card:#1a1a1a;
@@ -34,7 +40,7 @@
       radial-gradient(ellipse 90% 45% at 50% 0%, var(--accent-soft), transparent 70%),
       var(--bg);
     color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
   }
@@ -86,29 +92,6 @@
   .link small{display:block; color:var(--muted); font-size:.84rem; margin-top:2px}
   .link .arrow{flex:none; color:var(--muted); width:18px; height:18px}
 
-  /* destaque: combo */
-  .link.featured{
-    background:var(--accent); border-color:var(--accent); color:#0b0b0b;
-    box-shadow:0 14px 34px -12px var(--accent-glow);
-    margin-top:10px;
-  }
-  .link.featured:hover{background:#9dcab8; border-color:#9dcab8}
-  .link.featured .ico{background:rgba(0,0,0,.12); color:#0b0b0b}
-  .link.featured small{color:rgba(0,0,0,.68)}
-  .link.featured .arrow{color:#0b0b0b}
-  .badge{
-    position:absolute; top:-11px; right:16px;
-    background:var(--ink); color:#0b0b0b;
-    font-size:.7rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
-    padding:4px 10px; border-radius:100px;
-    box-shadow:0 4px 10px -4px rgba(0,0,0,.6);
-  }
-
-  /* em breve (sem link) */
-  .link.soon{cursor:default; opacity:.6; box-shadow:none}
-  .link.soon:hover{transform:none; background:var(--card); border-color:var(--line)}
-  .link.featured.soon:hover{background:var(--accent); border-color:var(--accent)}
-  .link.soon .arrow{display:none}
 
   /* WhatsApp */
   .link.whats .ico{background:rgba(37,211,102,.14); color:#25D366}

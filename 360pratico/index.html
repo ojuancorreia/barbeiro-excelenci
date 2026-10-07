@@ -509,7 +509,7 @@
   .sobre-curso h2{font-size:clamp(1.6rem, 3.2vw, 2.1rem); margin-bottom:18px; max-width:720px}
   .servicos h2{font-size:clamp(1.6rem, 3.2vw, 2.1rem); margin-bottom:10px}
   .servicos .sub{color:var(--ink-muted); margin:0 0 36px; max-width:560px}
-  .serv-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .serv-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
   @media (max-width:800px){ .serv-grid{grid-template-columns:1fr 1fr} }
   @media (max-width:480px){ .serv-grid{grid-template-columns:1fr} }
   .serv{
@@ -519,6 +519,10 @@
   .serv .k{font-family:'Bebas Neue', sans-serif; color:var(--accent); letter-spacing:0.1em; font-size:0.85rem}
   .serv h3{font-size:1.1rem; margin:6px 0 6px}
   .serv p{margin:0; color:var(--ink-muted); font-size:0.92rem}
+  .serv-cta{display:block; text-decoration:none; border-color:var(--accent); background:var(--accent-glow); transition:transform .18s ease}
+  .serv-cta:hover{transform:translateY(-2px)}
+  .serv-cta p{color:var(--accent); font-weight:600}
+  @media (max-width:800px){ .serv-cta{grid-column:1 / -1} }
   .proof-gallery.four{grid-template-columns:repeat(4, 1fr)}
   @media (max-width:800px){ .proof-gallery.four{grid-template-columns:1fr 1fr} }
   .feature-quote{
@@ -603,19 +607,20 @@
 </section>
 
 <!-- SERVIÇOS -->
-<!-- PREENCHER: lista real dos serviços ensinados no curso -->
 <section class="servicos">
   <div class="wrap">
     <span class="eyebrow">O que você vai aprender</span>
-    <h2>Os serviços extras do curso</h2>
+    <h2>7 serviços extras, na prática</h2>
     <p class="sub">Cada serviço mostrado na prática, do jeito que eu faço na barbearia.</p>
     <div class="serv-grid">
-      <div class="serv"><span class="k">Serviço 01</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
-      <div class="serv"><span class="k">Serviço 02</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
-      <div class="serv"><span class="k">Serviço 03</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
-      <div class="serv"><span class="k">Serviço 04</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
-      <div class="serv"><span class="k">Serviço 05</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
-      <div class="serv"><span class="k">Serviço 06</span><h3>[Nome do serviço]</h3><p>[Descrição curta]</p></div>
+      <div class="serv"><span class="k">Serviço 01</span><h3>Selagem</h3><p>Reduz volume e frizz, deixando o cabelo alinhado e com brilho.</p></div>
+      <div class="serv"><span class="k">Serviço 02</span><h3>Camuflagem</h3><p>Disfarça os fios brancos do cabelo e da barba com resultado natural.</p></div>
+      <div class="serv"><span class="k">Serviço 03</span><h3>Hidratação</h3><p>Devolve maciez e brilho aos fios. Um serviço fácil de oferecer junto com o corte.</p></div>
+      <div class="serv"><span class="k">Serviço 04</span><h3>Depilação de nariz</h3><p>Rápida de fazer e muito pedida, quando o cliente sabe que você oferece.</p></div>
+      <div class="serv"><span class="k">Serviço 05</span><h3>Depilação de orelha</h3><p>Um acabamento que o cliente percebe e valoriza.</p></div>
+      <div class="serv"><span class="k">Serviço 06</span><h3>Sobrancelha na navalha</h3><p>Alinha a sobrancelha e valoriza o rosto em poucos minutos.</p></div>
+      <div class="serv"><span class="k">Serviço 07</span><h3>Limpeza facial</h3><p>Remove impurezas e transforma o atendimento numa experiência de cuidado completo.</p></div>
+      <a class="serv serv-cta" href="#checkout-360"><span class="k">Os 7 serviços</span><h3>Tudo por R$79,97</h3><p>Quero o Método 360 na Prática →</p></a>
     </div>
   </div>
 </section>

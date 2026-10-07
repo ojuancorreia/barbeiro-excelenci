@@ -519,11 +519,20 @@
   .serv .k{font-family:'Bebas Neue', sans-serif; color:var(--accent); letter-spacing:0.1em; font-size:0.85rem}
   .serv h3{font-size:1.1rem; margin:6px 0 6px}
   .serv p{margin:0; color:var(--ink-muted); font-size:0.92rem}
+  .proof-gallery.four{grid-template-columns:repeat(4, 1fr)}
+  @media (max-width:800px){ .proof-gallery.four{grid-template-columns:1fr 1fr} }
+  .feature-quote{
+    margin:0 0 32px; padding:22px 24px;
+    border-left:3px solid var(--accent); background:var(--bg); border-radius:0 4px 4px 0;
+    max-width:760px;
+  }
+  .feature-quote blockquote{margin:0 0 10px; font-size:1.05rem; line-height:1.55}
+  .feature-quote figcaption{color:var(--ink-muted); font-size:0.85rem}
 </style>
 </head>
 <body>
 
-<!-- PREENCHER: trocar #checkout-360 pelo link de pagamento da Greenn e R$XX,XX pelo preço -->
+<!-- PREENCHER: trocar #checkout-360 pelo link de pagamento da Greenn -->
 <header class="nav">
   <div class="wrap">
     <a href="/" class="brand">Método <span>360</span> na Prática</a>
@@ -542,7 +551,7 @@
     </div>
     <p class="lede">Os serviços que eu executo na barbearia, além do cabelo e da barba, gravados em clientes reais.</p>
     <p class="sub">Você vê exatamente como eu faço no meu dia a dia, pra aplicar na sua cadeira e faturar mais com os clientes que você já tem.</p>
-    <a href="#checkout-360" class="btn">Quero o Método 360 na Prática — R$XX,XX</a>
+    <a href="#checkout-360" class="btn">Quero o Método 360 na Prática — R$79,97</a>
     <p class="hero-note">Acesso online imediato · Garantia de 7 dias</p>
   </div>
 </section>
@@ -656,10 +665,15 @@
   <div class="wrap">
     <span class="eyebrow">Quem já foi impactado</span>
     <blockquote class="pull">"Juan já formou e impactou barbeiros e líderes de barbearia por todo o país."</blockquote>
-    <div class="proof-gallery">
+    <figure class="feature-quote">
+      <blockquote>"Os meninos amaram o treinamento. Já tamo vendo os resultados, eles tão melhorando — tá muito massa o posicionamento da equipe."</blockquote>
+      <figcaption>Feedback recebido um dia depois de um treinamento presencial do Juan</figcaption>
+    </figure>
+    <div class="proof-gallery four">
       <div class="proof-slot"><img src="/img/prova-1.webp" width="600" height="681" alt="Print de conversa sobre mentoria com Juan Correia" loading="lazy" decoding="async"></div>
       <div class="proof-slot"><img src="/img/prova-2.webp" width="600" height="747" alt="Print de mentoria com participação de Juan Correia" loading="lazy" decoding="async"></div>
       <div class="proof-slot"><img src="/img/prova-3.webp" width="600" height="917" alt="Print de áudio agradecendo treinamento com Juan Correia" loading="lazy" decoding="async"></div>
+      <div class="proof-slot"><img src="/img/prova-4.webp" width="600" height="813" alt="Transcrição de áudio de cliente agradecendo o treinamento presencial e contando os resultados da equipe" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </section>
@@ -669,7 +683,7 @@
   <div class="wrap">
     <div class="price-ticket">
       <span class="eyebrow">Acesso imediato</span>
-      <div class="amount"><small>R$</small>XX,XX</div>
+      <div class="amount"><small>R$</small>79,97</div>
       <p class="desc">Acesso completo ao curso online, com todos os serviços gravados em clientes reais.</p>
       <a href="#checkout-360" class="btn">Quero o Método 360 na Prática</a>
       <p class="fine">Pagamento processado com segurança · Garantia de 7 dias</p>
@@ -723,7 +737,7 @@
 <section class="cta-final">
   <div class="wrap">
     <h2>Fature de 5 a 6 mil a mais por mês — sem cortar um cabelo a mais.</h2>
-    <a href="#checkout-360" class="btn">Quero o Método 360 na Prática — R$XX,XX</a>
+    <a href="#checkout-360" class="btn">Quero o Método 360 na Prática — R$79,97</a>
   </div>
 </section>
 
@@ -734,7 +748,7 @@
 </footer>
 
 <div class="sticky-cta">
-  <a href="#checkout-360" class="btn">Quero o curso — R$XX,XX</a>
+  <a href="#checkout-360" class="btn">Quero o curso — R$79,97</a>
 </div>
 
 <script>

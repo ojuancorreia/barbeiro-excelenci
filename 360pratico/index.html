@@ -527,6 +527,15 @@
   .serv .k{font-family:'Bebas Neue', sans-serif; color:var(--accent); letter-spacing:0.1em; font-size:0.85rem}
   .serv h3{font-size:1.1rem; margin:6px 0 6px}
   .serv p{margin:0; color:var(--ink-muted); font-size:0.92rem}
+  .formato{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:0 0 28px}
+  @media (max-width:700px){ .formato{grid-template-columns:1fr} }
+  .fmt{display:flex; gap:16px; align-items:flex-start; padding:18px 20px; border:1px dashed var(--accent); border-radius:4px}
+  .fmt .n{flex:none; font-family:'Bebas Neue', sans-serif; letter-spacing:0.08em; font-size:1.05rem; color:var(--absolute-black); background:var(--accent); border-radius:3px; padding:4px 10px; margin-top:2px}
+  .fmt h3{font-size:1.05rem; margin:0 0 4px}
+  .fmt p{margin:0; color:var(--ink-muted); font-size:0.92rem}
+  .aulas{list-style:none; margin:14px 0 0; padding:12px 0 0; border-top:1px dashed var(--line); display:flex; flex-direction:column; gap:6px}
+  .aulas li{font-size:0.86rem; color:var(--ink); display:flex; gap:8px; align-items:baseline}
+  .aulas li span{font-family:'Bebas Neue', sans-serif; letter-spacing:0.06em; color:var(--accent); font-size:0.8rem; flex:none}
   .serv-cta{display:block; text-decoration:none; border-color:var(--accent); background:var(--accent-glow); transition:transform .18s ease}
   .serv-cta:hover{transform:translateY(-2px)}
   .serv-cta p{color:var(--accent); font-weight:600}
@@ -618,17 +627,28 @@
 <section class="servicos">
   <div class="wrap">
     <span class="eyebrow">O que você vai aprender</span>
-    <h2>7 serviços extras, na prática</h2>
-    <p class="sub">Cada serviço mostrado na prática, do jeito que eu faço na barbearia.</p>
+    <h2>7 módulos. 14 aulas. Um serviço por módulo.</h2>
+    <p class="sub">Cada módulo é um serviço extra, dividido em duas aulas: primeiro eu explico, depois eu mostro na prática.</p>
+    <div class="formato">
+      <div class="fmt"><span class="n">Aula 1</span><div><h3>Explicação e venda</h3><p>O que é o serviço, pra quem ele serve e como eu ofereço e vendo pro cliente na cadeira.</p></div></div>
+      <div class="fmt"><span class="n">Aula 2</span><div><h3>Aula prática</h3><p>A execução completa, passo a passo, gravada em um cliente real na barbearia.</p></div></div>
+    </div>
     <div class="serv-grid">
-      <div class="serv"><span class="k">Serviço 01</span><h3>Selagem</h3><p>Reduz volume e frizz, deixando o cabelo alinhado e com brilho.</p></div>
-      <div class="serv"><span class="k">Serviço 02</span><h3>Camuflagem</h3><p>Disfarça os fios brancos do cabelo e da barba com resultado natural.</p></div>
-      <div class="serv"><span class="k">Serviço 03</span><h3>Hidratação</h3><p>Devolve maciez e brilho aos fios. Um serviço fácil de oferecer junto com o corte.</p></div>
-      <div class="serv"><span class="k">Serviço 04</span><h3>Depilação de nariz</h3><p>Rápida de fazer e muito pedida, quando o cliente sabe que você oferece.</p></div>
-      <div class="serv"><span class="k">Serviço 05</span><h3>Depilação de orelha</h3><p>Um acabamento que o cliente percebe e valoriza.</p></div>
-      <div class="serv"><span class="k">Serviço 06</span><h3>Sobrancelha na navalha</h3><p>Alinha a sobrancelha e valoriza o rosto em poucos minutos.</p></div>
-      <div class="serv"><span class="k">Serviço 07</span><h3>Limpeza facial</h3><p>Remove impurezas e transforma o atendimento numa experiência de cuidado completo.</p></div>
-      <a class="serv serv-cta" href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan!%20Quero%20comprar%20o%20M%C3%A9todo%20360%20na%20Pr%C3%A1tica."><span class="k">Os 7 serviços</span><h3>Tudo por R$79,97</h3><p>Quero o Método 360 na Prática →</p></a>
+      <div class="serv"><span class="k">Módulo 01</span><h3>Selagem</h3><p>Reduz volume e frizz, deixando o cabelo alinhado e com brilho.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 02</span><h3>Camuflagem</h3><p>Disfarça os fios brancos do cabelo e da barba com resultado natural.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 03</span><h3>Hidratação</h3><p>Devolve maciez e brilho aos fios. Um serviço fácil de oferecer junto com o corte.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 04</span><h3>Depilação de nariz</h3><p>Rápida de fazer e muito pedida, quando o cliente sabe que você oferece.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 05</span><h3>Depilação de orelha</h3><p>Um acabamento que o cliente percebe e valoriza.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 06</span><h3>Sobrancelha na navalha</h3><p>Alinha a sobrancelha e valoriza o rosto em poucos minutos.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <div class="serv"><span class="k">Módulo 07</span><h3>Limpeza facial</h3><p>Remove impurezas e transforma o atendimento numa experiência de cuidado completo.</p>
+        <ol class="aulas"><li><span>Aula 1</span>O que é e como vender</li><li><span>Aula 2</span>Execução em cliente real</li></ol></div>
+      <a class="serv serv-cta" href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan!%20Quero%20comprar%20o%20M%C3%A9todo%20360%20na%20Pr%C3%A1tica."><span class="k">7 módulos · 14 aulas</span><h3>Tudo por R$79,97</h3><p>Quero o Método 360 na Prática →</p></a>
     </div>
   </div>
 </section>
@@ -697,7 +717,7 @@
     <div class="price-ticket">
       <span class="eyebrow">Acesso imediato</span>
       <div class="amount"><small>R$</small>79,97</div>
-      <p class="desc">Acesso completo ao curso online, com todos os serviços gravados em clientes reais.</p>
+      <p class="desc">7 módulos e 14 aulas: em cada serviço, uma aula de explicação e venda e uma aula prática em cliente real.</p>
       <a href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan!%20Quero%20comprar%20o%20M%C3%A9todo%20360%20na%20Pr%C3%A1tica." class="btn">Quero o Método 360 na Prática</a>
       <p class="fine">Pagamento processado com segurança · Garantia de 7 dias</p>
     </div>
@@ -731,8 +751,8 @@
         <p>Não. A ideia é justamente faturar mais com os clientes que você já atende, oferecendo e executando serviços extras.</p>
       </details>
       <details>
-        <summary>As aulas são teóricas?</summary>
-        <p>Não. Tudo foi gravado em clientes reais, no dia a dia da barbearia, pra você ver como cada serviço é executado de verdade.</p>
+        <summary>Como as aulas são organizadas?</summary>
+        <p>São 7 módulos, um para cada serviço, com 2 aulas cada. Na primeira eu explico o que é o serviço e como eu vendo. Na segunda eu executo o serviço em um cliente real, do começo ao fim.</p>
       </details>
       <details>
         <summary>Como acesso o curso?</summary>

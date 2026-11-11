@@ -93,6 +93,17 @@
   .link .arrow{flex:none; color:var(--muted); width:18px; height:18px}
 
 
+  /* Destaque: Método 360 na Prática */
+  .link.featured{
+    background:linear-gradient(135deg, rgba(143,191,171,.20), rgba(143,191,171,.05) 55%, var(--card));
+    border-color:rgba(143,191,171,.65);
+    box-shadow:0 0 0 1px rgba(143,191,171,.15), 0 12px 32px -12px var(--accent-glow);
+  }
+  .link.featured:hover{border-color:var(--accent); background:linear-gradient(135deg, rgba(143,191,171,.26), rgba(143,191,171,.08) 55%, var(--card-hover))}
+  .link.featured .ico{background:var(--accent); color:#111}
+  .link.featured small{color:var(--accent); font-weight:600}
+  .link.featured .arrow{color:var(--accent)}
+
   /* WhatsApp */
   .link.whats .ico{background:rgba(37,211,102,.14); color:#25D366}
 
@@ -143,16 +154,16 @@
       </a>
     </li>
     <li>
-      <a class="link" href="/ebook/">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
-        <span class="txt"><strong>eBook Barbeiro de Excelência</strong><small>Desafio prático de 7 dias</small></span>
+      <a class="link featured" href="/360pratico/">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+        <span class="txt"><strong>Método 360 na Prática</strong><small>Multiplique seu faturamento</small></span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
     </li>
     <li>
-      <a class="link" href="/360pratico/">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
-        <span class="txt"><strong>Método 360 na Prática</strong></span>
+      <a class="link" href="/ebook/">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+        <span class="txt"><strong>eBook Barbeiro de Excelência</strong><small>Desafio prático de 7 dias</small></span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </a>
     </li>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mentoria e Treinamento Presencial | Juan Correia</title>
+<meta name="description" content="Fale com Juan Correia sobre a Mentoria 360 ou o treinamento presencial para equipes de barbearia.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Mentoria e Treinamento Presencial | Juan Correia">
+<meta property="og:description" content="Mentoria 360 e treinamento presencial para barbearias.">
+<meta property="og:image" content="https://www.juancorreia.com.br/img/juan-og.jpg">
+<link rel="preload" as="font" href="/fonts/fraunces-700-nome.woff2" type="font/woff2" crossorigin>
+<style>
+  /* Fraunces 700 recortada só com as letras de "Juan Correia" (3,5 KB, hospedada no site) */
+  @font-face{
+    font-family:'Fraunces'; font-style:normal; font-weight:700; font-display:swap;
+    src:url(/fonts/fraunces-700-nome.woff2) format('woff2');
+    unicode-range:U+20,U+43,U+4A,U+61,U+65,U+69,U+6E-6F,U+72,U+75;
+  }
+  :root{
+    --bg:#111111;
+    --card:#1a1a1a;
+    --card-hover:#212121;
+    --accent:#8FBFAB;
+    --accent-soft:rgba(143,191,171,.14);
+    --accent-glow:rgba(143,191,171,.40);
+    --ink:#FEFEFE;
+    --muted:#9a9a9a;
+    --line:#2e2e2e;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; min-height:100vh;
+    background:
+      radial-gradient(ellipse 90% 45% at 50% 0%, var(--accent-soft), transparent 70%),
+      var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+
+  .page{
+    max-width:480px; margin:0 auto;
+    padding:44px 18px calc(32px + env(safe-area-inset-bottom));
+  }
+
+  /* ---------- topo ---------- */
+  .top{text-align:center; margin-bottom:30px}
+  .avatar{
+    width:104px; height:104px; margin:0 auto 14px;
+    border-radius:50%; object-fit:cover;
+    border:3px solid var(--bg);
+    box-shadow:0 0 0 2px var(--accent), 0 10px 30px -8px var(--accent-glow);
+  }
+  .top h1{
+    font-family:'Fraunces',serif; font-weight:700;
+    font-size:1.55rem; margin:0 0 4px; letter-spacing:-.01em;
+  }
+  .top p{margin:0; color:var(--muted); font-size:.95rem}
+
+  /* ---------- botões ---------- */
+  .links{display:flex; flex-direction:column; gap:14px; margin:0; padding:0; list-style:none}
+  .link{
+    position:relative;
+    display:flex; align-items:center; gap:14px;
+    padding:16px 18px; min-height:76px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:0 6px 18px -10px rgba(0,0,0,.7);
+    transition:transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+  .link:hover{transform:translateY(-2px); background:var(--card-hover); border-color:#3d3d3d}
+  .link:active{transform:scale(.985)}
+  .link:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+  .link .ico{
+    flex:none; width:44px; height:44px; border-radius:12px;
+    display:grid; place-items:center;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .link .ico svg{width:22px; height:22px}
+  .link .txt{flex:1; min-width:0}
+  .link strong{display:block; font-size:1rem; font-weight:700; line-height:1.25}
+  .link small{display:block; color:var(--muted); font-size:.84rem; margin-top:2px}
+  .link .arrow{flex:none; color:var(--muted); width:18px; height:18px}
+
+
+  /* WhatsApp */
+  .link.whats .ico{background:rgba(37,211,102,.14); color:#25D366}
+
+  /* ---------- sobre ---------- */
+  .about{
+    margin-top:40px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:24px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 20px 40px -24px rgba(0,0,0,.8);
+  }
+  .about img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 25%}
+  .about .body{padding:22px 22px 26px}
+  .about .label{
+    display:inline-block; margin-bottom:8px;
+    font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+  }
+  .about h2{font-family:'Fraunces',serif; font-size:1.45rem; margin:0 0 10px}
+  .about p{color:var(--muted); font-size:.95rem; margin:0 0 12px}
+  .tags{display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin-top:16px}
+  .tags span{
+    font-size:.74rem; font-weight:600; color:var(--accent);
+    border:1px solid rgba(143,191,171,.45); border-radius:100px; padding:4px 11px;
+  }
+
+  footer{text-align:center; margin-top:34px; color:#666; font-size:.8rem}
+
+  @media (prefers-reduced-motion:reduce){ *{transition:none!important} }
+
+  .back{display:inline-flex; align-items:center; gap:6px; color:var(--muted); font-size:.9rem; margin-bottom:22px}
+  .back svg{width:16px; height:16px}
+  .back:hover{color:var(--ink)}
+  .choose{text-align:center; color:var(--muted); font-size:.95rem; margin:0 0 18px}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <a class="back" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Voltar</a>
+
+  <header class="top">
+    <img class="avatar" src="/img/juan-avatar.webp" width="104" height="104" alt="Juan Correia" fetchpriority="high">
+    <h1>Juan Correia</h1>
+    <p>Líder de Barbeiros · Educador · Visagista</p>
+  </header>
+
+  <p class="choose">Sobre o que você quer falar comigo?</p>
+
+  <ul class="links">
+    <li>
+      <a class="link whats" href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan%21%20Vim%20pelo%20Instagram%20e%20tenho%20interesse%20na%20Mentoria%20360.%20Quero%20saber%20como%20funciona%20e%20como%20fa%C3%A7o%20para%20entrar." target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.44 9.44 0 0 1-4.81-1.32l-.35-.21-3.57.94.95-3.48-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.2 4.24-9.44 9.46-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.77 6.68c0 5.21-4.24 9.45-9.44 9.45zm8.04-17.49A11.3 11.3 0 0 0 12.05.68C5.78.68.68 5.78.68 12.04c0 2 .52 3.96 1.52 5.68L.58 23.62l6.04-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.26 0 11.36-5.1 11.36-11.36 0-3.04-1.18-5.89-3.32-8.04z"/></svg></span>
+        <span class="txt"><strong>Mentoria 360</strong><small>Acompanhamento individual</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="link whats" href="https://wa.me/5541991860404?text=Ol%C3%A1%20Juan%21%20Vim%20pelo%20Instagram%20e%20quero%20saber%20sobre%20o%20treinamento%20presencial%20para%20a%20equipe%20da%20minha%20barbearia." target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.44 9.44 0 0 1-4.81-1.32l-.35-.21-3.57.94.95-3.48-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.2 4.24-9.44 9.46-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.77 6.68c0 5.21-4.24 9.45-9.44 9.45zm8.04-17.49A11.3 11.3 0 0 0 12.05.68C5.78.68.68 5.78.68 12.04c0 2 .52 3.96 1.52 5.68L.58 23.62l6.04-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.26 0 11.36-5.1 11.36-11.36 0-3.04-1.18-5.89-3.32-8.04z"/></svg></span>
+        <span class="txt"><strong>Treinamento Presencial</strong><small>Para a equipe da sua barbearia</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <footer>© 2026 Juan Correia</footer>
+
+</main>
+</body>
+</html>

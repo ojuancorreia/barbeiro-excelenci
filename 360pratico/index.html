@@ -216,6 +216,20 @@
   @media (max-width:380px){.incl li{font-size:.85rem;gap:10px}.price-card{padding:28px 14px}}
   @media (prefers-reduced-motion:reduce){.btn.pulse{animation:none}*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '998456517020077');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=998456517020077&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -476,6 +490,14 @@
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.1 });
     els.forEach(el => io.observe(el));
   }
+</script>
+<script>
+  (function(){
+    var P={content_name:'Método 360 Online',content_ids:['196900'],content_type:'product',value:79.97,currency:'BRL'};
+    var o=document.getElementById('oferta'),seen=false;
+    if(o&&'IntersectionObserver' in window){new IntersectionObserver(function(e,obs){if(e[0].isIntersecting&&!seen){seen=true;window.fbq&&fbq('track','ViewContent',P);obs.disconnect()}},{threshold:.4}).observe(o)}
+    document.querySelectorAll('a[href*="payfast.greenn.com.br"]').forEach(function(a){a.addEventListener('click',function(){window.fbq&&fbq('track','InitiateCheckout',P)})});
+  })();
 </script>
 </body>
 </html>

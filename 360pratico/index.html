@@ -147,10 +147,10 @@
   .incl{list-style:none;padding:0;margin:0 0 24px;text-align:left;display:grid;gap:12px}
   .incl li{display:flex;gap:12px;color:#dfe4e2;font-size:.97rem;line-height:1.45}
   .incl li:before{content:"✓";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green-2);font-weight:800;font-size:.78rem;margin-top:1px}
-  .trust{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px}
+  .trust{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px}
   .trust li{display:flex;align-items:center;gap:6px;color:#c9d1ce;font-size:.84rem;font-weight:600}
   .trust svg{width:16px;height:16px;color:var(--green-2);flex:none}
-  .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:16px}
+  .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:14px}
   .brands span{display:inline-flex;align-items:center;justify-content:center;height:26px;min-width:44px;padding:0 8px;border-radius:6px;background:#fff;font-size:.7rem;font-weight:800;letter-spacing:.02em}
   .b-visa{color:#1a1f71;font-style:italic;font-size:.8rem!important}
   .b-master i{width:13px;height:13px;border-radius:50%;display:block}
@@ -178,7 +178,7 @@
 
   .final{text-align:center;padding:90px 0 110px}
   .final h2{max-width:720px;margin:0 auto 26px}
-  footer{border-top:1px solid var(--line);padding:28px 0 calc(90px + env(safe-area-inset-bottom));color:#6b7370;font-size:.82rem;text-align:center}
+  footer{border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom));color:#6b7370;font-size:.82rem;text-align:center}
 
   /* barra fixa mobile */
   .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(5,6,5,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none}
@@ -204,14 +204,16 @@
     .hero-photo .tag{font-size:.6rem;letter-spacing:.24em}
     .pains,.services{grid-template-columns:1fr}
     .price b{font-size:3.6rem}
+    .price-card{padding:30px 20px}
+    .incl li{font-size:.92rem}
     .pillars{grid-template-columns:1fr}
     details.mod summary{grid-template-columns:1fr auto;gap:10px}
     .mod-tag{grid-column:1/-1;justify-self:start}
     .topbar .btn{display:none}
-    .sticky-cta{display:block}
     .guarantee{flex-direction:column;text-align:center}
     .price b{font-size:3.4rem}
   }
+  @media (max-width:380px){.incl li{font-size:.85rem;gap:10px}.price-card{padding:28px 14px}}
   @media (prefers-reduced-motion:reduce){.btn.pulse{animation:none}*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
@@ -402,31 +404,28 @@
         <div class="name display">Método 360 Online</div>
         <p class="pc-lead">O que muda no seu dia a dia:</p>
         <ul class="incl">
-          <li>Você para de depender só de corte e barba pra fechar o mês.</li>
-          <li>Passa a conduzir o atendimento e enxergar oportunidade em cada cliente.</li>
-          <li>Oferece 7 serviços extras com segurança — sabe indicar, explicar e executar.</li>
-          <li>Recomenda e vende produtos sem parecer insistente.</li>
-          <li>Transforma sua meta de faturamento em números claros pro mês, semana e dia.</li>
-          <li>Aprende com aulas curtas, gravadas em clientes reais, e aplica no mesmo dia.</li>
+          <li>Pare de viver só de corte e barba</li>
+          <li>Veja oportunidade em cada cliente</li>
+          <li>Ofereça 7 serviços extras sem medo</li>
+          <li>Venda produtos sem ser insistente</li>
+          <li>Bata sua meta de faturamento</li>
+          <li>Aplique tudo no mesmo dia</li>
         </ul>
         <div class="price-box">
           <span class="from">Investimento</span>
           <div class="price"><small>R$</small><b>79,97</b></div>
         </div>
         <a class="btn pulse" href="https://payfast.greenn.com.br/196900/offer/YhxTOz">Quero o Método 360 Online</a>
+        <div class="brands" aria-label="Formas de pagamento">
+          <span class="b-visa">VISA</span>
+          <span class="b-master" aria-label="Mastercard"><i></i><i></i></span>
+          <span class="b-elo">elo</span>
+        </div>
         <ul class="trust">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Pagamento 100% seguro</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Garantia de 7 dias</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Acesso imediato</li>
         </ul>
-        <div class="brands" aria-label="Formas de pagamento">
-          <span class="b-visa">VISA</span>
-          <span class="b-master" aria-label="Mastercard"><i></i><i></i></span>
-          <span class="b-elo">elo</span>
-          <span class="b-amex">AMEX</span>
-          <span class="b-hiper">Hipercard</span>
-          <span class="b-pix">Pix</span>
-        </div>
         <p class="pay-note">Compra processada pela Greenn</p>
       </div>
     </div>
@@ -471,10 +470,8 @@
 
 <footer>Método 360 Online © 2026 · Juan Correia — Todos os direitos reservados</footer>
 
-<div class="sticky-cta hide"><a class="btn" href="#oferta">Quero o curso</a></div>
 
 <script>
-  (function(){var c=document.querySelector('.sticky-cta'),h=document.querySelector('.hero .btn'),o=document.querySelector('#oferta');if(!c||!('IntersectionObserver' in window)){c&&c.classList.remove('hide');return}var hv=true,ov=false;function u(){c.classList.toggle('hide',hv||ov)}new IntersectionObserver(function(e){hv=e[0].isIntersecting;u()}).observe(h);new IntersectionObserver(function(e){ov=e[0].isIntersecting;u()}).observe(o)})();
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const els = document.querySelectorAll('main section:not(.hero)');
     els.forEach(el => el.classList.add('reveal'));

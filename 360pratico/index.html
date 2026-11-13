@@ -432,6 +432,7 @@ fbq('track', 'PageView');
           <span class="b-visa">VISA</span>
           <span class="b-master" aria-label="Mastercard"><i></i><i></i></span>
           <span class="b-elo">elo</span>
+          <span class="b-pix">Pix</span>
         </div>
         <ul class="trust">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Pagamento 100% seguro</li>
@@ -496,7 +497,6 @@ fbq('track', 'PageView');
     var P={content_name:'Método 360 Online',content_ids:['196900'],content_type:'product',value:79.97,currency:'BRL'};
     var o=document.getElementById('oferta'),seen=false;
     if(o&&'IntersectionObserver' in window){new IntersectionObserver(function(e,obs){if(e[0].isIntersecting&&!seen){seen=true;window.fbq&&fbq('track','ViewContent',P);obs.disconnect()}},{threshold:.4}).observe(o)}
-    document.querySelectorAll('a[href*="payfast.greenn.com.br"]').forEach(function(a){a.addEventListener('click',function(){window.fbq&&fbq('track','InitiateCheckout',P)})});
   })();
 </script>
 </body>

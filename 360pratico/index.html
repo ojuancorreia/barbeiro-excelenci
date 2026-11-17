@@ -153,6 +153,7 @@
   .old-price{display:block;margin-top:8px;color:#8f9995;font-size:1.05rem}
   .old-price s{text-decoration-thickness:2px;text-decoration-color:#ff7a6e}
   .off{display:inline-block;margin-left:8px;background:#ff7a6e;color:#1a0503;border-radius:6px;padding:2px 8px;font-size:.78rem;font-weight:900;vertical-align:middle}
+  .bf-note{margin:10px 0 0;color:#ffd166;font-size:.86rem;font-weight:700}
   .price-box{border-top:1px solid rgba(47,185,133,.25);border-bottom:1px solid rgba(47,185,133,.25);padding:20px 0 18px;margin:0 0 22px}
   .price-box .from{display:block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green-2)}
   .price{display:flex;align-items:flex-start;justify-content:center;gap:6px;margin:8px 0 0}
@@ -250,10 +251,11 @@ fbq('track', 'PageView');
 
 
 <div class="bf-bar" data-bf>
-  <span class="tag">BLACK FRIDAY</span>
-  <span>Oferta de Black Friday termina em</span>
+  <span class="tag">LANÇAMENTO</span>
+  <span>Preço de lançamento acaba em</span>
   <span class="countdown" data-countdown aria-live="off"><span><b data-d>00</b><small>dias</small></span><span><b data-h>00</b><small>horas</small></span><span><b data-m>00</b><small>min</small></span><span><b data-s>00</b><small>seg</small></span></span>
-  <a href="#oferta">Ver oferta</a>
+  <span>· depois sobe pra R$129,90</span>
+  <a href="#oferta">Garantir agora</a>
 </div>
 <main>
 
@@ -454,13 +456,14 @@ fbq('track', 'PageView');
           <li>Aplique tudo no mesmo dia</li>
         </ul>
         <div class="bf-box" data-bf>
-          <span class="label">Preço de Black Friday termina em</span>
+          <span class="label">Preço de lançamento acaba em</span>
           <span class="countdown" data-countdown aria-live="off"><span><b data-d>00</b><small>dias</small></span><span><b data-h>00</b><small>horas</small></span><span><b data-m>00</b><small>min</small></span><span><b data-s>00</b><small>seg</small></span></span>
         </div>
         <div class="price-box">
-          <span class="from">Preço de Black Friday</span>
+          <span class="from">Preço de lançamento</span>
           <span class="old-price">De <s>R$129,90</s> por<span class="off">-38%</span></span>
           <div class="price"><small>R$</small><b>79,97</b></div>
+          <p class="bf-note" data-bf>Só até sexta, 20/11, às 23h59. Depois o preço sobe pra R$129,90.</p>
         </div>
         <a class="btn pulse" href="https://payfast.greenn.com.br/196900/offer/YhxTOz">Quero o Método 360 Online</a>
         <div class="brands" aria-label="Formas de pagamento">
@@ -536,7 +539,7 @@ fbq('track', 'PageView');
 </script>
 <script>
   (function(){
-    var END=new Date('2026-11-27T23:59:59-03:00').getTime();
+    var END=new Date('2026-11-20T23:59:59-03:00').getTime();
     var boxes=document.querySelectorAll('[data-countdown]'),wraps=document.querySelectorAll('[data-bf]');
     function pad(n){return n<10?'0'+n:''+n}
     function tick(){

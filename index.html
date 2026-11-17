@@ -11,8 +11,7 @@
 <meta property="og:image" content="https://www.juancorreia.com.br/img/juan-og.jpg">
 <meta property="og:image:width" content="640">
 <meta property="og:image:height" content="800">
-<link rel="preload" as="image" href="/img/juan-avatar.webp" type="image/webp">
-<link rel="preload" as="image" href="/img/juan-turma-hero.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="/img/juan-avatar.webp" type="image/webp" fetchpriority="high">
 <link rel="preload" as="font" href="/fonts/fraunces-700-nome.woff2" type="font/woff2" crossorigin>
 <style>
   /* Fraunces 700 recortada só com as letras de "Juan Correia" (3,5 KB, hospedada no site) */
@@ -115,8 +114,8 @@
   .hero-img{position:relative}
   .hero-img img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 10%}
   .hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,16,0) 50%,#0f1110 100%)}
-  .badge{position:absolute;z-index:2;top:14px;left:14px;background:rgba(17,17,17,.75);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#e9f5ef;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
-  .hero-body{padding:6px 22px 24px;text-align:center}
+  .badge{display:inline-block;margin-bottom:14px;background:rgba(47,185,133,.14);border:1px solid rgba(47,185,133,.35);color:#bfe9d6;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .hero-body{padding:26px 22px 24px;text-align:center}
   .kicker{display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#2fb985;margin-bottom:6px}
   .hero-body h2{font-size:1.6rem;font-weight:800;line-height:1.1;margin:0 0 10px;letter-spacing:-.02em}
   .hero-body p{margin:0 0 20px;color:#c4c9c7;font-size:.96rem}
@@ -169,11 +168,8 @@
   </header>
 
   <a class="hero-card" href="/360pratico/" aria-label="Conheça o Método 360 Online">
-    <div class="hero-img">
-      <img src="/img/juan-turma-hero.webp" width="1717" height="1249" alt="Juan Correia conduzindo um treinamento para barbeiros" fetchpriority="high">
-      <span class="badge">Curso online · Acesso imediato</span>
-    </div>
     <div class="hero-body">
+      <span class="badge">Curso online · Acesso imediato</span>
       <span class="kicker">Meu principal curso</span>
       <h2>Método 360 Online</h2>
       <p>Aprenda a ampliar seus serviços, agregar valor ao atendimento e faturar mais na barbearia.</p>

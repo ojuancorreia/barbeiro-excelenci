@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Método 360 Online — Fature mais com os clientes que você já tem | Juan Correia</title>
-<meta name="description" content="Aprenda como o Juan Correia fatura mais de R$7.000 por mês em serviços extras: atendimento consultivo, serviços extras, venda de produtos e metas.">
+<meta name="description" content="Aprenda como o Juan Correia fatura de R$6.000 a R$7.000 todos os meses com serviços extras: atendimento consultivo, serviços extras, venda de produtos e metas.">
 <meta name="theme-color" content="#050605">
 <meta property="og:title" content="Método 360 Online | Juan Correia">
 <meta property="og:description" content="Visão completa. Resultados reais. O método para o barbeiro faturar mais com os clientes que já tem.">
@@ -141,6 +141,18 @@
   .price-card{max-width:560px;margin:36px auto 0;background:#070d0a;border:1px solid rgba(47,185,133,.45);border-radius:28px;padding:34px 28px;box-shadow:0 40px 80px -40px rgba(47,185,133,.35)}
   .price-card .name{font-size:.9rem}
   .pc-lead{margin:18px 0 16px;font-weight:700;color:var(--ink);font-size:1.02rem}
+  .bf-bar{background:linear-gradient(90deg,#0b281d,#0f3a29 50%,#0b281d);border-bottom:1px solid rgba(47,185,133,.35);color:#eafff5;text-align:center;padding:10px 16px;font-size:.88rem;font-weight:700;letter-spacing:.02em;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 14px}
+  .bf-bar .tag{background:#2fb985;color:#04120c;border-radius:6px;padding:3px 9px;font-size:.72rem;font-weight:900;letter-spacing:.12em}
+  .bf-bar a{color:#9fe7c7;text-decoration:underline}
+  .countdown{display:inline-flex;gap:6px;font-variant-numeric:tabular-nums}
+  .countdown span{display:inline-flex;flex-direction:column;align-items:center;min-width:44px;background:rgba(0,0,0,.35);border:1px solid rgba(47,185,133,.35);border-radius:8px;padding:4px 6px;font-size:1rem;font-weight:800;line-height:1.1}
+  .countdown small{font-size:.58rem;font-weight:700;color:#9fe7c7;letter-spacing:.08em;text-transform:uppercase}
+  .bf-box{margin:0 0 18px;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .bf-box .label{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#ffd166}
+  .bf-box .countdown span{min-width:58px;padding:7px 8px;font-size:1.35rem}
+  .old-price{display:block;margin-top:8px;color:#8f9995;font-size:1.05rem}
+  .old-price s{text-decoration-thickness:2px;text-decoration-color:#ff7a6e}
+  .off{display:inline-block;margin-left:8px;background:#ff7a6e;color:#1a0503;border-radius:6px;padding:2px 8px;font-size:.78rem;font-weight:900;vertical-align:middle}
   .price-box{border-top:1px solid rgba(47,185,133,.25);border-bottom:1px solid rgba(47,185,133,.25);padding:20px 0 18px;margin:0 0 22px}
   .price-box .from{display:block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green-2)}
   .price{display:flex;align-items:flex-start;justify-content:center;gap:6px;margin:8px 0 0}
@@ -237,6 +249,12 @@ fbq('track', 'PageView');
 <body>
 
 
+<div class="bf-bar" data-bf>
+  <span class="tag">BLACK FRIDAY</span>
+  <span>Oferta de Black Friday termina em</span>
+  <span class="countdown" data-countdown aria-live="off"><span><b data-d>00</b><small>dias</small></span><span><b data-h>00</b><small>horas</small></span><span><b data-m>00</b><small>min</small></span><span><b data-s>00</b><small>seg</small></span></span>
+  <a href="#oferta">Ver oferta</a>
+</div>
 <main>
 
   <!-- HERO -->
@@ -245,7 +263,7 @@ fbq('track', 'PageView');
       <img src="/img/juan-turma-hero.webp" width="1717" height="1249" alt="Juan Correia ensinando uma turma de barbeiros ao lado da cadeira" fetchpriority="high">
     </div>
     <div class="wrap hero-main">
-      <h1>Aprenda como eu faturo <em>mais de R$7.000 por mês</em> em serviços extras.</h1>
+      <h1>Aprenda como eu faço pra faturar <em>de R$6.000 a R$7.000</em> todos os meses com serviços extras.</h1>
       <p class="sub">Sem aumentar a agenda. Com os clientes que já sentam na sua cadeira.</p>
     </div>
   </section>
@@ -381,7 +399,7 @@ fbq('track', 'PageView');
         <p class="lead">Atua na área da beleza desde 2015 e, desde 2018, é dedicado exclusivamente ao atendimento masculino. Hoje é líder geral da Barbearia John Six, responsável pelo treinamento de toda a equipe.</p>
         <p class="lead">É educador em três formações reconhecidas no setor e visagista desde 2022.</p>
         <div class="tags"><span>Podium Pro</span><span>Podium Academy</span><span>Evolution Academy</span><span>Visagista</span></div>
-        <div class="stat"><b>+R$7 mil</b><span>todos os meses, somente com serviços extras, atendendo os clientes que já tem.</span></div>
+        <div class="stat"><b>R$6–7 mil</b><span>todos os meses, somente com serviços extras, atendendo os clientes que já tem.</span></div>
       </div>
     </div>
   </section>
@@ -435,8 +453,13 @@ fbq('track', 'PageView');
           <li>Bata sua meta de faturamento</li>
           <li>Aplique tudo no mesmo dia</li>
         </ul>
+        <div class="bf-box" data-bf>
+          <span class="label">Preço de Black Friday termina em</span>
+          <span class="countdown" data-countdown aria-live="off"><span><b data-d>00</b><small>dias</small></span><span><b data-h>00</b><small>horas</small></span><span><b data-m>00</b><small>min</small></span><span><b data-s>00</b><small>seg</small></span></span>
+        </div>
         <div class="price-box">
-          <span class="from">Investimento</span>
+          <span class="from">Preço de Black Friday</span>
+          <span class="old-price">De <s>R$129,90</s> por<span class="off">-38%</span></span>
           <div class="price"><small>R$</small><b>79,97</b></div>
         </div>
         <a class="btn pulse" href="https://payfast.greenn.com.br/196900/offer/YhxTOz">Quero o Método 360 Online</a>
@@ -486,7 +509,7 @@ fbq('track', 'PageView');
 
   <section class="final band-green">
     <div class="wrap">
-      <h2>Fature mais de R$7.000 por mês com serviços extras — sem precisar de mais clientes.</h2>
+      <h2>Fature de R$6.000 a R$7.000 por mês com serviços extras — sem precisar de mais clientes.</h2>
       <a class="btn pulse" href="https://payfast.greenn.com.br/196900/offer/YhxTOz">Quero o Método 360 Online — R$79,97</a>
       <p class="note">Acesso imediato · Garantia de 7 dias</p>
     </div>
@@ -509,6 +532,21 @@ fbq('track', 'PageView');
     var P={content_name:'Método 360 Online',content_ids:['196900'],content_type:'product',value:79.97,currency:'BRL'};
     var o=document.getElementById('oferta'),seen=false;
     if(o&&'IntersectionObserver' in window){new IntersectionObserver(function(e,obs){if(e[0].isIntersecting&&!seen){seen=true;window.fbq&&fbq('track','ViewContent',P);obs.disconnect()}},{threshold:.4}).observe(o)}
+  })();
+</script>
+<script>
+  (function(){
+    var END=new Date('2026-11-27T23:59:59-03:00').getTime();
+    var boxes=document.querySelectorAll('[data-countdown]'),wraps=document.querySelectorAll('[data-bf]');
+    function pad(n){return n<10?'0'+n:''+n}
+    function tick(){
+      var t=END-Date.now();
+      if(t<=0){wraps.forEach(function(w){w.style.display='none'});return false}
+      var d=Math.floor(t/864e5),h=Math.floor(t%864e5/36e5),m=Math.floor(t%36e5/6e4),s=Math.floor(t%6e4/1e3);
+      boxes.forEach(function(b){b.querySelector('[data-d]').textContent=pad(d);b.querySelector('[data-h]').textContent=pad(h);b.querySelector('[data-m]').textContent=pad(m);b.querySelector('[data-s]').textContent=pad(s)});
+      return true
+    }
+    if(tick()){var iv=setInterval(function(){if(!tick())clearInterval(iv)},1000)}
   })();
 </script>
 </body>
